@@ -6,5 +6,10 @@
   "assets": {},
   "vars": {
     "VALUE_FROM_CLOUDFLARE": "Hello from Cloudflare"
+  },
+  "observability": {
+    "logs": {
+      "enabled": true
+    }
   }
 }
