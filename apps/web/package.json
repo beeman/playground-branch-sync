@@ -1,5 +1,6 @@
 {
   "name": "apps-web",
+  "description": "This is the branch sync playground web app",
   "private": true,
   "type": "module",
   "scripts": {
