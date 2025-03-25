@@ -9,15 +9,8 @@ jobs:
   create_sync_pr:
     runs-on: ubuntu-latest
     steps:
-      - uses: dequelabs/action-sync-branches@v1
+      - uses: tretuna/sync-branches@1.4.0
         with:
-          base: 'stage'
-          head: 'dev'
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          pr-title: 'chore: sync dev -> stage'
-          pr-labels: |
-            chore
-            sync
-          pr-body: |
-            This PR was created automatically by the `action-sync-branches` GitHub Action.
-            It will update the `dev` branch with the latest changes from the `stage` branch.
+          - GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          - FROM_BRANCH: "dev"
+          - TO_BRANCH: "stage"
