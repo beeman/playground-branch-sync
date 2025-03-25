@@ -1,7 +1,7 @@
 {
   "name": "playground-branch-sync",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the branch sync playground",
   "main": "index.js",
   "scripts": {
     "build": "pnpm -r build",
