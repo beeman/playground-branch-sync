@@ -8,7 +8,10 @@ on:
 jobs:
   create_sync_pr:
     runs-on: ubuntu-latest
+    name: Sync dev -> stage
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - uses: tretuna/sync-branches@1.4.0
         with:
           - GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
